@@ -1,0 +1,50 @@
+html,body{
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.start{
+  background-image: url("../../assets/mainBackground.jpg");
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.header-form{
+  min-width:350px !important;
+  background-color:white;
+}
+
+@media screen and (max-width: 858px) {
+
+    body{
+      overflow-x: hidden;
+    }
+
+    .start{
+      height: 110%;
+    }
+
+    #startImage{
+        display: none;
+    }
+    .control-label{
+      display: none;
+    }
+    .input-group{
+      width:80% !important;
+      left:10% !important;
+    }
+    .header-form i{
+      display: none;
+    }
+    .header-form{
+      position: relative;
+      width: 70% !important;
+    }
+    .indexLogin .loginSubmit{
+      position: relative;
+      left: 40% !important;
+    }
+}

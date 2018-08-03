@@ -1,0 +1,26 @@
+# ./docker-compose.yml
+
+version: '3'
+
+services:
+  web:
+    build: .
+    container_name: php_web
+    volumes:
+      - ./:/var/www/html/
+    ports:
+      - "8000:80"
+    links:
+      - db
+    networks:
+      - default
+  db:
+    image: mysql:5.7.22
+    container_name: search-db
+    environment:
+      MYSQL_ROOT_PASSWORD: hello123
+      MYSQL_DATABASE: studentSearch
+    ports:
+      - "5000:3306"
+    networks:
+      - default

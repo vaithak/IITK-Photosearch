@@ -1,0 +1,62 @@
+body{
+  background-image: url("../../assets/searchBackground.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+#resulting{
+  overflow-y: scroll !important;
+  height:90vh !important;
+}
+
+.card:hover{
+  cursor: pointer;
+}
+
+.textForm{
+  background-color: white;
+  -webkit-box-shadow: 1px 1px 5px 6px #000;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    1px 1px 5px 6px #000;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         1px 1px 5px 6px #000;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+  border-radius: 20px;
+  padding: 20px
+}
+
+/* Fix materialize non allignment problem */
+.input-field [type="checkbox"]+label {
+  top: -5px !important;
+ }
+ /* End of Fix */
+
+.caret {
+  border-color: transparent !important;
+}
+
+.inpText i{
+  position: absolute;
+  transition: color .2s;
+  top: 0px !important;
+  right: 0px !important;
+}
+
+.inpText i.active {
+  color: #26a69a;
+}
+/* END of text search form  */
+
+
+/* START of text search results */
+#numResults{
+  position: relative;
+  left: 45%;
+}
+
+@media screen and (max-width: 768px) {
+  #numResults{
+    position: relative;
+    left: 35%;
+  }
+}
+/* END of text search results  */
